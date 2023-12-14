@@ -112,4 +112,21 @@ body {
     min-height: 94vh;
   }
 }
+.social-media {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #ffd700; 
+}
+
 
