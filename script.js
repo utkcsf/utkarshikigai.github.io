@@ -1,23 +1,19 @@
-
-//making object of weatherapi
 const weatherApi = {
     key: '9f23b56e8dcad8299bf4e5a2a3fc932b',
     baseUrl: 'https://api.openweathermap.org/data/2.5/weather'
 }
 
-//anonymous function
-//adding event listener key press of enter
+
 let searchInputBox = document.getElementById('input-box');
 searchInputBox.addEventListener('keypress', (event) => {
     if (event.keyCode == 13) {
-        // console.log(searchInputBox.value);
         getWeatherReport(searchInputBox.value);
         
     }
 })
 
 
-//get waether report
+
 
 function getWeatherReport(city) {
     fetch(`${weatherApi.baseUrl}?q=${city}&appid=${weatherApi.key}&units=metric`)    
